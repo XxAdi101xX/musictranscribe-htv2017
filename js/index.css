@@ -1,3 +1,7 @@
-#keyboard {
-  border-color: black;
+body {
+  background-color: darkslategray;
+}
+
+.keyboard {
+  height: 500%
 }
