@@ -1,7 +1,15 @@
+
+
 $(document).ready(function(){
+  var id = a;
+alert("ghi");
+   $("#root").mousedown(function() {
+      id.play();
+   });
 
-   alert("hello");
-
+   $("root").click(function() {
+      alert("hiii");
+   });
 });
 
 
