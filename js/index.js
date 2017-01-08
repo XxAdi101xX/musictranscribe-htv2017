@@ -88,7 +88,7 @@ function changeColor(keyPiano) {
 }
 
 function playNote(keyPiano) {
-	var audio = new Audio("../main/keyValues/" + keyPiano + ".wav");
+	var audio = new Audio("../main/notes/" + keyPiano + ".wav");
 	audio.play();
 }
 
