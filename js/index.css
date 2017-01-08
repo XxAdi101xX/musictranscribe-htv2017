@@ -3,7 +3,7 @@ html {
 }
 
 #keyboard {
-	height: 5%;
+	height: 300px;
   position: absolute;
   left:40%;
   top:400px;
@@ -21,5 +21,11 @@ html {
 
 h1 {
   color:white;
+  text-align: center;
+}
+
+
+h2 {
+  color:black;
   text-align: center;
 }
