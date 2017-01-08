@@ -24,10 +24,11 @@
 		<audio id="note_b5"><source src="../main/notes/b5.wav" type="audio/mpeg"></audio>
 	</head>
 	<body>
-		<button id="start">  Click here to begin  </button>
-		<button id="stop">  Press here once you're done recording  </button>
-			<div id="boo">bai</div>
-		<div>
+		<main>
+		<h1>Music Transcriber</h1>
+		
+			<div id="boo"></div>
+		<div id="board">
 			<svg id="keyboard">
 					<rect id="w1" style="fill:white; stroke:black;" x="0" y="0" width="24" height="120"/>
 					<rect id="w2" style="fill:white; stroke:black;" x="25" y="0" width="24" height="120"/>
@@ -44,9 +45,9 @@
 					<rect id="b5" style="fill:black; stroke:black;" x="142" y="0" width="15" height="80"/>
 			</svg>
 		</div>
-$( document ).ready(function() {
+
     <script type="text/javascript"  src="https://unpkg.com/vexflow/releases/vexflow-debug.js"></script>
 <script type="text/javascript" src="musicsignature.js"></script>
-});
+	</main>
 	</body>
 </html>

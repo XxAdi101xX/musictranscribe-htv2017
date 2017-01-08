@@ -6,3 +6,17 @@ html {
 	height: 5%;
 }
 
+#main {
+  margin: auto;
+  position: absolute;
+  top:50%
+}
+
+#board {
+  top: -500px;
+}
+
+h1 {
+  color:white;
+  text-align: center;
+}

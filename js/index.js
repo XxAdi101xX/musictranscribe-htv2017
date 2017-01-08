@@ -10,8 +10,6 @@ $(document).keypress(function(event) {
 	var keyValues={};
     keyValues.id =  String.fromCharCode(event.which);
     array.push(keyValues);
-    alert(array[i].id);
-	alert(array.length);
     ++i;
 	switch (keyKeyboard) {
 		case "a":
