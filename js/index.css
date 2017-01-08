@@ -2,6 +2,6 @@ body {
   background-color: darkslategray;
 }
 
-.keyboard {
+#keyboard {
   height: 500%
 }

@@ -24,63 +24,64 @@ var keyPiano = null;
 $(document).keypress(function(event) {
 	keyKeyboard = String.fromCharCode(event.which).toLowerCase();
 	switch (keyKeyboard) {
-		case 'a':
-			keyPiano = 'w1';
-			console.log('G');
-			break;
-		case 's':
-			keyPiano = 'w2';
-			console.log('A');
-			break;
-		case 'd':
-			keyPiano = 'w3';
-			console.log('B');
-			break;
-		case 'f':
-			keyPiano = 'w4';
-			console.log('C');
-			break;
-		case 'g':
-			keyPiano = 'w5';
-			console.log('D');
-			break;
-		case 'h':
-			keyPiano = 'w6';
-			console.log('E');
-			break;
-		case 'j':
-			keyPiano = 'w7';
-			console.log('F');
-			break;
-		case 'k':
-			keyPiano = 'w8';
+		case "a":
+			keyPiano = "w1";
 			console.log("G");
 			break;
-		case 'w':
-			keyPiano = 'b1';
-			console.log('G#');
+		case "s":
+			keyPiano = "w2";
+			console.log("A");
 			break;
-		case 'e':
-			keyPiano = 'b2';
-			console.log('A#');
+		case "d":
+			keyPiano = "w3";
+			console.log("B");
 			break;
-		case 't':
-			keyPiano = 'b3';
-			console.log('C#');
+		case "f":
+			keyPiano = "w4";
+			console.log("C");
 			break;
-		case 'y':
-			keyPiano = 'b4';
-			console.log('D#');
+		case "g":
+			keyPiano = "w5";
+			console.log("D");
 			break;
-		case 'u':
-			keyPiano = 'b5';
-			console.log('F#');
+		case "h":
+			keyPiano = "w6";
+			console.log("E");
+			break;
+		case "j":
+			keyPiano = "w7";
+			console.log("F");
+			break;
+		case "k":
+			keyPiano = "w8";
+			console.log("G");
+			break;
+		case "w":
+			keyPiano = "b1";
+			console.log("G#");
+			break;
+		case "e":
+			keyPiano = "b2";
+			console.log("A#");
+			break;
+		case "t":
+			keyPiano = "b3";
+			console.log("C#");
+			break;
+		case "y":
+			keyPiano = "b4";
+			console.log("D#");
+			break;
+		case "u":
+			keyPiano = "b5";
+			console.log("F#");
 			break;
 		default:
 			keyPiano = null
 			console.log("Not a note");
 			break;
 	}
+	var keyNote = "note" + keyPiano
 	if (keyPiano != null) {
 		changeColor(keyPiano);
 	}
@@ -96,5 +97,11 @@ function changeColor(keyPiano) {
 	setTimeout(function(){
 		set.setAttribute("style", attribute);
 	}, 100)
+}
+
+function play() {
+	var audioLocation = document.getElementById()
+	new Audio();
+	audio.play();
 }
 
