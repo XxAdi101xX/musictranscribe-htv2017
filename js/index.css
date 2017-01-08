@@ -1,7 +1,9 @@
-body {
+html {
   background-color: darkslategray;
 }
 
 #keyboard {
-  height: 500%
+  background-color: red;
+	height: 10%;
 }
+
