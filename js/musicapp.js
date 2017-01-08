@@ -3,7 +3,6 @@
 $(document).ready(function(){
   var id = a;
   var notes = [];
-  alert("ghi");
   $("#root").mousedown(function() {
     id.play();
   });
@@ -14,5 +13,7 @@ $(document).ready(function(){
    $(".keys").click(function() {
    id = $(this).attr("id");
    notes.push(id);
+   alert(notes[0]);
   });
+
 });
