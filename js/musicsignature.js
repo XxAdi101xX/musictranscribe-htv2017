@@ -64,7 +64,8 @@ for (i = 0; i < array.length; ++i) {
 			break;
 		case "w":
 			convertedNote="c#"
-			voice.draw(context, stave);break;
+			voice.draw(context, stave);
+			break;
 		case "e":
 			convertedNote="d#"
 			break;

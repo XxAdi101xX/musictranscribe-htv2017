@@ -65,7 +65,6 @@ $(document).keypress(function(event) {
 			console.log("F#");
 			break;
 		default:
-			keyPiano = null
 			console.log("Not a note");
 			break;
 	}
@@ -87,21 +86,8 @@ function changeColor(keyPiano) {
 	}, 100)
 }
 
+// Sets directory of music note and plays it
 function playNote(keyPiano) {
-	var audio = new Audio("../main/notes/" + keyPiano + ".wav");
+	var audio = new Audio("../js/notes/" + keyPiano + ".wav");
 	audio.play();
-}
-
-function displaykeyValues(array)
-{
-	var set = document.getElementById(keyPiano);
-	var attribute = "fill:white; stroke:black";
-	if (keyPiano.charAt(0) == "b") {
-		attribute = "fill:black; stroke:black";
-	}
-	set.setAttribute("style", "fill:orange; stroke:black");
-	setTimeout(function(){
-		set.setAttribute("style", attribute);
-	}, 100)
-
 }
