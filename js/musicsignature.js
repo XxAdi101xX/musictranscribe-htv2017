@@ -57,25 +57,25 @@ for (i = 0; i < array.length; ++i) {
 			convertedNote="a"
 			break;
 		case "j":
-			convertedNote="j"
+			convertedNote="b"
 			break;
 		case "k":
 			convertedNote="g"
 			break;
 		case "w":
-			convertedNote="g#"
+			convertedNote="c#"
 			voice.draw(context, stave);break;
 		case "e":
-			convertedNote="a#"
-			break;
-		case "t":
-			convertedNote="c#"
-			break;
-		case "y":
 			convertedNote="d#"
 			break;
-		case "u":
+		case "t":
 			convertedNote="f#"
+			break;
+		case "y":
+			convertedNote="g#"
+			break;
+		case "u":
+			convertedNote="a#"
 			break;
 		default:
 			convertedNote="b"
