@@ -1,23 +1,3 @@
-/*$(document).ready(function(){
-  var id = a;
-  var notes = [];
-  $("#root").mousedown(function() {
-    id.play();
-  });
-
-  $("root").click(function() {
-    alert("hiii");
-   });
-   $(".keys").click(function() {
-   id = $(this).attr("id");
-   notes.push(id);
-   alert(notes[0]);
-  });
-
-});*/
-
-//circle1.style.fill="yellow";
-
 var keyKeyboard = null;
 var keyPiano = null;
 
@@ -81,9 +61,9 @@ $(document).keypress(function(event) {
 			console.log("Not a note");
 			break;
 	}
-	var keyNote = "note" + keyPiano
 	if (keyPiano != null) {
 		changeColor(keyPiano);
+		playNote(keyPiano);
 	}
 });
 
@@ -99,9 +79,7 @@ function changeColor(keyPiano) {
 	}, 100)
 }
 
-function play() {
-	var audioLocation = document.getElementById()
-	new Audio();
+function playNote(keyPiano) {
+	var audio = new Audio("../main/notes/" + keyPiano + ".wav");
 	audio.play();
 }
-
