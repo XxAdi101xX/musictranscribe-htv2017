@@ -1,8 +1,18 @@
 var keyKeyboard = null;
 var keyPiano = null;
+var array=[]; 
+var start = document.getElementById("start");
+var end = document.getElementById("end");
+var i = 0;
 
 $(document).keypress(function(event) {
 	keyKeyboard = String.fromCharCode(event.which).toLowerCase();
+	var keyValues={};
+    keyValues.id =  String.fromCharCode(event.which);
+    array.push(keyValues);
+    alert(array[i].id);
+	alert(array.length);
+    ++i;
 	switch (keyKeyboard) {
 		case "a":
 			keyPiano = "w1";
@@ -80,6 +90,20 @@ function changeColor(keyPiano) {
 }
 
 function playNote(keyPiano) {
-	var audio = new Audio("../main/notes/" + keyPiano + ".wav");
+	var audio = new Audio("../main/keyValues/" + keyPiano + ".wav");
 	audio.play();
+}
+
+function displaykeyValues(array)
+{
+	var set = document.getElementById(keyPiano);
+	var attribute = "fill:white; stroke:black";
+	if (keyPiano.charAt(0) == "b") {
+		attribute = "fill:black; stroke:black";
+	}
+	set.setAttribute("style", "fill:orange; stroke:black");
+	setTimeout(function(){
+		set.setAttribute("style", attribute);
+	}, 100)
+
 }
