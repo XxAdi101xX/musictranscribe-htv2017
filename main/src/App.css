@@ -25,3 +25,9 @@
   to { transform: rotate(360deg); }
 }
 
+.sigLine {
+  width:85%;
+  height:15%;
+  background-color: black;
+  margin: auto;
+}
