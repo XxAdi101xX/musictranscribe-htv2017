@@ -1,49 +1,54 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script type="text/javascript" src="musicapp.js"></script>
-    <title>React App</title>
-  </head>
-  <body>
-    <audio id="a">
-  <source src="../main/notes/a.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-    <button id="hello">Click</button>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<audio id="note_w1"><source src="../main/notes/w1.mp3" type="audio/mpeg"></audio>
+		<audio id="note_w2"><source src="../main/notes/w2.mp3" type="audio/mpeg"></audio>
+		<audio id="note_w3"><source src="../main/notes/w3.mp3" type="audio/mpeg"></audio>
+		<audio id="note_w4"><source src="../main/notes/w4.mp3" type="audio/mpeg"></audio>
+		<audio id="note_w5"><source src="../main/notes/w5.mp3" type="audio/mpeg"></audio>
+		<audio id="note_w6"><source src="../main/notes/w6.mp3" type="audio/mpeg"></audio>
+		<audio id="note_w7"><source src="../main/notes/w7.mp3" type="audio/mpeg"></audio>
+		<audio id="note_w8"><source src="../main/notes/w8.mp3" type="audio/mpeg"></audio>
+		<audio id="note_b1"><source src="../main/notes/b1.mp3" type="audio/mpeg"></audio>
+		<audio id="note_b2"><source src="../main/notes/b2.mp3" type="audio/mpeg"></audio>
+		<audio id="note_b3"><source src="../main/notes/b3.mp3" type="audio/mpeg"></audio>
+		<audio id="note_b4"><source src="../main/notes/b4.mp3" type="audio/mpeg"></audio>
+		<audio id="note_b5"><source src="../main/notes/b5.mp3" type="audio/mpeg"></audio>
 		<div>
-			<svg>
-				<rect class="keys" id="w1" style="fill:orange;" x="0" y="0" width="24" height="120"/>
-				<rect class="keys" id="w2" style="fill:orange;" x="25" y="0" width="24" height="120"/>
-				<rect class="keys" id="w3" style="fill:orange;" x="50" y="0" width="24" height="120"/>
-				<rect class="keys" id="w4" style="fill:orange;" x="75" y="0" width="24" height="120"/>
-				<rect class="keys" id="w5" style="fill:orange;" x="100" y="0" width="24" height="120"/>
-				<rect class="keys" id="w6" style="fill:orange;" x="125" y="0" width="24" height="120"/>
-				<rect class="keys" id="w7" style="fill:orange;" x="150" y="0" width="24" height="120"/>
-				<rect class="keys" id="w8" style="fill:orange;" x="175" y="0" width="24" height="120"/>
-				<rect class="keys" id="w9" style="fill:orange;" x="200" y="0" width="24" height="120"/>
-				<rect class="keys" id="w10" style="fill:orange;" x="225" y="0" width="24" height="120"/>
-				<rect class="keys" id="w11" style="fill:orange;" x="250" y="0" width="24" height="120"/>
-				<rect class="keys" id="w12" style="fill:orange;" x="275" y="0" width="24" height="120"/>
-				<rect class="keys" id="w13" style="fill:orange;" x="300" y="0" width="24" height="120"/>
-				<rect class="keys" id="w14" style="fill:orange;" x="325" y="0" width="24" height="120"/>
-				<rect class="keys" id="b1" style="fill:black;" x="17" y="0" width="15" height="80"/>
-				<rect class="keys" id="b2" style="fill:black;" x="42" y="0" width="15" height="80"/>
-				<rect class="keys" id="b3" style="fill:black;" x="92" y="0" width="15" height="80"/>
-				<rect class="keys" id="b4" style="fill:black;" x="117" y="0" width="15" height="80"/>
-				<rect class="keys" id="b5" style="fill:black;" x="142" y="0" width="15" height="80"/>
-				<rect class="keys" id="b6" style="fill:black;" x="192" y="0" width="15" height="80"/>
-				<rect class="keys" id="b7" style="fill:black;" x="217" y="0" width="15" height="80"/>
-				<rect class="keys" id="b8" style="fill:black;" x="267" y="0" width="15" height="80"/>
-				<rect class="keys" id="b9" style="fill:black;" x="292" y="0" width="15" height="80"/>
-				<rect class="keys" id="b10" style="fill:black;" x="317" y="0" width="15" height="80"/>
+			<svg id="keyboard">
+				<rect id="w1" style="fill:white;" x="0" y="0" width="24" height="120"/>
+				<rect id="w2" style="fill:white;" x="25" y="0" width="24" height="120"/>
+				<rect id="w3" style="fill:white;" x="50" y="0" width="24" height="120"/>
+				<rect id="w4" style="fill:white;" x="75" y="0" width="24" height="120"/>
+				<rect id="w5" style="fill:white;" x="100" y="0" width="24" height="120"/>
+				<rect id="w6" style="fill:white;" x="125" y="0" width="24" height="120"/>
+				<rect id="w7" style="fill:white;" x="150" y="0" width="24" height="120"/>
+				<rect id="w8" style="fill:white;" x="175" y="0" width="24" height="120"/>
+				<!--<rect id="w9" style="fill:white;" x="200" y="0" width="24" height="120"/>
+				<rect id="w10" style="fill:white;" x="225" y="0" width="24" height="120"/>
+				<rect id="w11" style="fill:white;" x="250" y="0" width="24" height="120"/>
+				<rect id="w12" style="fill:white;" x="275" y="0" width="24" height="120"/>
+				<rect id="w13" style="fill:white;" x="300" y="0" width="24" height="120"/>
+				<rect id="w14" style="fill:white;" x="325" y="0" width="24" height="120"/>-->
+				<rect id="b1" style="fill:black;" x="17" y="0" width="15" height="80"/>
+				<rect id="b2" style="fill:black;" x="42" y="0" width="15" height="80"/>
+				<rect id="b3" style="fill:black;" x="92" y="0" width="15" height="80"/>
+				<rect id="b4" style="fill:black;" x="117" y="0" width="15" height="80"/>
+				<rect id="b5" style="fill:black;" x="142" y="0" width="15" height="80"/>
+				<!--<rect id="b6" style="fill:black;" x="192" y="0" width="15" height="80"/>
+				<rect id="b7" style="fill:black;" x="217" y="0" width="15" height="80"/>
+				<rect id="b8" style="fill:black;" x="267" y="0" width="15" height="80"/>
+				<rect id="b9" style="fill:black;" x="292" y="0" width="15" height="80"/>
+				<rect id="b10" style="fill:black;" x="317" y="0" width="15" height="80"/>-->
 			</svg>
 		</div>
-
-main/notes/a.mp3
-  </body>
+	</body>
 </html>
